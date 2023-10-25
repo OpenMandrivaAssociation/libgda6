@@ -120,8 +120,6 @@ export CPPFLAGS+=' -I/usr/include/graphviz'
 %files -n %{pkgname} -f libgda-%{api}.lang
 %doc AUTHORS COPYING README
 %{_datadir}/libgda-%{api}
-%dir %{_libdir}/libgda-%{api}
-%dir %{_libdir}/libgda-%{api}/providers
 
 %files -n %{libname}
 %{_libdir}/libgda-%{api}.so.%{major}*
