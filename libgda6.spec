@@ -218,46 +218,46 @@ export CPPFLAGS+=' -I/usr/include/graphviz'
 %{_libdir}/libgda-%{api}.so.%{major}*
 
 %files -n %{libnamereport}
-%{_libdir}/libgda-report-%{api}.so.%{major}*
+#{_libdir}/libgda-report-%{api}.so.%{major}*
 
 %files -n %{libnameui}
-%{_libdir}/libgda-ui-%{api}.so.%{major}*
+#{_libdir}/libgda-ui-%{api}.so.%{major}*
 
 %files -n %{libnamexslt}
-%{_libdir}/libgda-xslt-%{api}.so.%{major}*
+#{_libdir}/libgda-xslt-%{api}.so.%{major}*
 
 %files -n %{girname}
-%{_libdir}/girepository-1.0/Gda-%{api}.typelib
+#{_libdir}/girepository-1.0/Gda-%{api}.typelib
 
 %files -n %{girnameui}
-%{_libdir}/girepository-1.0/Gdaui-%{api}.typelib
+#{_libdir}/girepository-1.0/Gdaui-%{api}.typelib
 
 %files -n %{devname}
-%doc %{_datadir}/gtk-doc/html/libgda-%{api}/
-%doc %{_datadir}/gtk-doc/html/gda-browser
-%{_libdir}/libgda-%{api}.so
-%{_libdir}/libgda-report-%{api}.so
-%{_libdir}/libgda-ui-%{api}.so
-%{_libdir}/libgda-xslt-%{api}.so
-%{_libdir}/pkgconfig/*
-%{_includedir}/*
-%{_datadir}/libgda-%{api}/demo
-%{_datadir}/gir-1.0/Gda-%{api}.gir
-%{_datadir}/gir-1.0/Gdaui-%{api}.gir
+#doc %{_datadir}/gtk-doc/html/libgda-%{api}/
+#doc %{_datadir}/gtk-doc/html/gda-browser
+#{_libdir}/libgda-%{api}.so
+#{_libdir}/libgda-report-%{api}.so
+#{_libdir}/libgda-ui-%{api}.so
+#{_libdir}/libgda-xslt-%{api}.so
+#{_libdir}/pkgconfig/*
+#{_includedir}/*
+#{_datadir}/libgda-%{api}/demo
+#{_datadir}/gir-1.0/Gda-%{api}.gir
+#{_datadir}/gir-1.0/Gdaui-%{api}.gir
 
 %files -n %{pkgname}-sqlite
-%{_libdir}/libgda-%{api}/providers/libgda-sqlite.so
+#{_libdir}/libgda-%{api}/providers/libgda-sqlite.so
 
 %files -n %{pkgname}-postgres
-%{_libdir}/libgda-%{api}/providers/libgda-postgres.so
+#{_libdir}/libgda-%{api}/providers/libgda-postgres.so
 
 %files -n %{pkgname}-bdb
-%{_libdir}/libgda-%{api}/providers/libgda-bdb.so
+#{_libdir}/libgda-%{api}/providers/libgda-bdb.so
 
 %if %{build_mysql}
 %files -n %{pkgname}-mysql
-%{_libdir}/libgda-%{api}/providers/libgda-mysql.so
+#{_libdir}/libgda-%{api}/providers/libgda-mysql.so
 %endif
 
 %files -n %{pkgname}-ldap
-%{_libdir}/libgda-%{api}/providers/libgda-ldap.so
+#{_libdir}/libgda-%{api}/providers/libgda-ldap.so
