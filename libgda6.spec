@@ -193,25 +193,25 @@ export CPPFLAGS+=' -I/usr/include/graphviz'
 
 %files -n %{pkgname} -f libgda-%{api}.lang
 %doc AUTHORS COPYING README
-%dir %{_sysconfdir}/libgda-%{api}
-%config(noreplace) %_sysconfdir/libgda-%{api}/sales_test.db
-%config(noreplace) %{_sysconfdir}/libgda-%{api}/config
-%{_bindir}/*
-%{_datadir}/applications/gda-browser-%{api}.desktop
-%{_datadir}/applications/gda-control-center-%{api}.desktop
-%{_datadir}/pixmaps/gda*
-%{_datadir}/icons/hicolor/*/apps/gda-control-center.*
+#dir %{_sysconfdir}/libgda-%{api}
+#config(noreplace) %_sysconfdir/libgda-%{api}/sales_test.db
+#config(noreplace) %{_sysconfdir}/libgda-%{api}/config
+#{_bindir}/*
+#{_datadir}/applications/gda-browser-%{api}.desktop
+#{_datadir}/applications/gda-control-center-%{api}.desktop
+#{_datadir}/pixmaps/gda*
+#{_datadir}/icons/hicolor/*/apps/gda-control-center.*
 %{_datadir}/libgda-%{api}
-%exclude %{_datadir}/libgda-%{api}/demo
+#exclude %{_datadir}/libgda-%{api}/demo
 %dir %{_libdir}/libgda-%{api}
-%dir %{_libdir}/libgda-%{api}/plugins
+#dir %{_libdir}/libgda-%{api}/plugins
 %dir %{_libdir}/libgda-%{api}/providers
-%{_libdir}/libgda-%{api}/plugins/*.xml
-%{_libdir}/libgda-%{api}/plugins/libgda-ui-plugins.so
-%{_libdir}/libgda-%{api}/providers/libgda-web.so
-%{_libdir}/libgda-%{api}/providers/libgda-sqlcipher.so
-%{_mandir}/man1/*
-%{_datadir}/appdata/gda-browser-5.0.appdata.xml
+#{_libdir}/libgda-%{api}/plugins/*.xml
+#{_libdir}/libgda-%{api}/plugins/libgda-ui-plugins.so
+#{_libdir}/libgda-%{api}/providers/libgda-web.so
+#{_libdir}/libgda-%{api}/providers/libgda-sqlcipher.so
+#_mandir}/man1/*
+#{_datadir}/appdata/gda-browser-5.0.appdata.xml
 
 
 %files -n %{libname}
