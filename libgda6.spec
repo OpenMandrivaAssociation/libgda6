@@ -21,7 +21,7 @@
 Summary:	GNU Data Access
 Name:		libgda6
 Version:	6.0.0
-Release:	1
+Release:	2
 License:	GPLv2+ and LGPLv2+
 Group:		Databases
 Url:		https://www.gnome-db.org/
